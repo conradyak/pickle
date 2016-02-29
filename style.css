@@ -11,108 +11,85 @@ header {
   top: 0;
   left: 0;
 }
-
 div.logo {
   width: 20em;
   height: 10.9375em;
   padding: 1.5em 0 2rem;
 }
-
 div.logo h1 {
   min-width: 16.2rem;
   text-align: center;
   margin: 0 auto;
 }
-
 div.menu {
   width: 20em;
 }
-
 div.menu h3 {
   text-align: center;
 }
-
 div.menu ul {
   padding: 2rem 0;
   text-align: center;
 }
-
 div.menu ul li {
   display: list-item;
   padding-bottom: 1em;
 }
-
-.menu ul li a {
-
-}
-
-div.social {
-
-}
-
+.menu ul li a {}
+div.social {}
 div.social ul {
   padding-top: 8em;
   text-align: center;
 }
-
 div.social ul li {
   display: inline-block;
-
 }
-
 div.social ul li a {
   padding-right: 1em;
 }
-
 div.container {
   padding-left: 20rem;
 }
-
 #landingSection {
-    background: gray;
-    height: 100%;
-    min-height: 45.3125em;
-    overflow-y: hidden;
+  background: gray;
+  height: 100%;
+  min-height: 45.3125em;
+  overflow-y: hidden;
 }
 #storySection {
-    background: #f7f7f7;
-    height: 100%;
-    min-height: 45.3125em;
-    overflow-y: hidden;
-    z-index: 1;
+  background: #f7f7f7;
+  height: 100%;
+  min-height: 45.3125em;
+  overflow-y: hidden;
+  z-index: 1;
 }
-
 #storyContainer {
-    z-index: 2;
-    text-align: center;
-    width: 50%;
-    margin-left: 25%;
-    margin-top: 15%;
-    font-size: larger;
+  z-index: 2;
+  text-align: center;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 15%;
+  font-size: larger;
 }
-
 #story-logo {
-    width: 2em;
-    height: 2em;
-    background: green;
-    margin-left: 50%;
+  width: 2em;
+  height: 2em;
+  background: green;
+  margin-left: 50%;
 }
-
 #pantrySection {
-    background: blue;
-    height: 100%;
-    min-height: 45.3125em;
-    overflow-y: hidden;
+  background: blue;
+  height: 100%;
+  min-height: 45.3125em;
+  overflow-y: hidden;
 }
-
 #pantryContainer {
   max-width: 100%;
   display: inline-flex;
 }
 .pantryColumn {
-    width: 33.33%;
+  width: 33.33%;
 }
-
 #pantryCard {
   background-color: white;
   width: 90%;
@@ -120,31 +97,27 @@ div.container {
   margin-left: 5%;
   position: relative;
 }
-
 #gallerySection {
-      height: 100%;
-      min-height: 45.3125em;
-      overflow-y: hidden;
+  height: 100%;
+  min-height: 45.3125em;
+  overflow-y: hidden;
 }
-
 .jcarousel-wrapper {
-    margin: 20px auto;
-    position: relative;
-    border: 10px solid #fff;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-box-shadow: 0 0 2px #999;
-    -moz-box-shadow: 0 0 2px #999;
-    box-shadow: 0 0 2px #999;
+  margin: 20px auto;
+  position: relative;
+  border: 10px solid #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 2px #999;
+  -moz-box-shadow: 0 0 2px #999;
+  box-shadow: 0 0 2px #999;
 }
-
 .jcarousel {
   position: relative;
   overflow: hidden;
   width: 100%;
 }
-
 .jcarousel ul {
   width: 200000em;
   position: relative;
@@ -152,7 +125,6 @@ div.container {
   margin: 0;
   padding: 0;
 }
-
 .jcarousel li {
   width: 200px;
   float: left;
@@ -161,15 +133,12 @@ div.container {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 .jcarousel img {
   display: block;
   max-width: 100%;
   height: auto !important;
 }
-
-.jcarousel-control-prev,
-.jcarousel-control-next {
+.jcarousel-control-prev, .jcarousel-control-next {
   position: absolute;
   top: 50%;
   margin-top: -15px;
@@ -188,60 +157,48 @@ div.container {
   -moz-box-shadow: 0 0 4px #F0EFE7;
   box-shadow: 0 0 4px #F0EFE7;
 }
-
 .jcarousel-control-prev {
   left: 15px;
 }
-
 .jcarousel-control-next {
   right: 15px;
 }
-
 .jcarousel-pagination {
-    position: absolute;
-    bottom: -40px;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
-    margin: 0;
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  margin: 0;
 }
-
 .jcarousel-pagination a {
-    text-decoration: none;
-    display: inline-block;
-
-    font-size: 11px;
-    height: 10px;
-    width: 10px;
-    line-height: 10px;
-
-    background: #fff;
-    color: #4E443C;
-    border-radius: 10px;
-    text-indent: -9999px;
-
-    margin-right: 7px;
-
-
-    -webkit-box-shadow: 0 0 2px #4E443C;
-    -moz-box-shadow: 0 0 2px #4E443C;
-    box-shadow: 0 0 2px #4E443C;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+  height: 10px;
+  width: 10px;
+  line-height: 10px;
+  background: #fff;
+  color: #4E443C;
+  border-radius: 10px;
+  text-indent: -9999px;
+  margin-right: 7px;
+  -webkit-box-shadow: 0 0 2px #4E443C;
+  -moz-box-shadow: 0 0 2px #4E443C;
+  box-shadow: 0 0 2px #4E443C;
 }
-
 .jcarousel-pagination a.active {
-    background: #4E443C;
-    color: #fff;
-    opacity: 1;
-
-    -webkit-box-shadow: 0 0 2px #F0EFE7;
-    -moz-box-shadow: 0 0 2px #F0EFE7;
-    box-shadow: 0 0 2px #F0EFE7;
+  background: #4E443C;
+  color: #fff;
+  opacity: 1;
+  -webkit-box-shadow: 0 0 2px #F0EFE7;
+  -moz-box-shadow: 0 0 2px #F0EFE7;
+  box-shadow: 0 0 2px #F0EFE7;
 }
-
 #contactSection {
   background: green;
-    height: 100%;
-    min-height: 45.3125em;
-    overflow-y: hidden;
+  height: 100%;
+  min-height: 45.3125em;
+  overflow-y: hidden;
 }
