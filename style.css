@@ -103,15 +103,16 @@ div.container {
   overflow-y: hidden;
 }
 .jcarousel-wrapper {
-  margin: 20px auto;
+  margin: 2em auto;
+  height: 35em;
   position: relative;
-  border: 10px solid #fff;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 0 2px #999;
-  -moz-box-shadow: 0 0 2px #999;
-  box-shadow: 0 0 2px #999;
+  border: .75em solid #fff;
+  -webkit-border-radius: 0.03125em;
+  -moz-border-radius: 0.03125em;
+  border-radius: 0.03125em;
+  -webkit-box-shadow: 0 0 0.0125em #999;
+  -moz-box-shadow: 0 0 0.0125em #999;
+  box-shadow: 0 0 0.0125em #999;
 }
 .jcarousel {
   position: relative;
@@ -126,9 +127,9 @@ div.container {
   padding: 0;
 }
 .jcarousel li {
-  width: 200px;
+  width: 12.5em;
   float: left;
-  border: 1px solid #fff;
+  border: 0.00625em solid #fff;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -141,31 +142,31 @@ div.container {
 .jcarousel-control-prev, .jcarousel-control-next {
   position: absolute;
   top: 50%;
-  margin-top: -15px;
-  width: 30px;
-  height: 30px;
+  margin-top: -1em;
+  width: 1.5em;
+  height: 1.5em;
   text-align: center;
   background: #4E443C;
   color: #fff;
   text-decoration: none;
-  text-shadow: 0 0 1px #000;
-  font: 24px/27px Arial, sans-serif;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
-  -webkit-box-shadow: 0 0 4px #F0EFE7;
-  -moz-box-shadow: 0 0 4px #F0EFE7;
-  box-shadow: 0 0 4px #F0EFE7;
+  text-shadow: 0 0 0.00625em #000;
+  font: 1.5em/1.5em Arial, sans-serif;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  border-radius: 2em;
+  -webkit-box-shadow: 0 0 .25em #F0EFE7;
+  -moz-box-shadow: 0 0 .25em #F0EFE7;
+  box-shadow: 0 0 .25em #F0EFE7;
 }
 .jcarousel-control-prev {
-  left: 15px;
+  left: 1em;
 }
 .jcarousel-control-next {
-  right: 15px;
+  right: 1em;
 }
 .jcarousel-pagination {
   position: absolute;
-  bottom: -40px;
+  bottom: -3em;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
@@ -175,30 +176,53 @@ div.container {
 .jcarousel-pagination a {
   text-decoration: none;
   display: inline-block;
-  font-size: 11px;
-  height: 10px;
-  width: 10px;
-  line-height: 10px;
+  font-size: 1em;
+  height: .75em;
+  width: .75em;
+  line-height: .75em;
   background: #fff;
   color: #4E443C;
-  border-radius: 10px;
+  border-radius: .6em;
   text-indent: -9999px;
-  margin-right: 7px;
-  -webkit-box-shadow: 0 0 2px #4E443C;
-  -moz-box-shadow: 0 0 2px #4E443C;
-  box-shadow: 0 0 2px #4E443C;
+  margin-right: .5em;
+  -webkit-box-shadow: 0 0 .25em #4E443C;
+  -moz-box-shadow: 0 0 .25em #4E443C;
+  box-shadow: 0 0 .25em #4E443C;
 }
 .jcarousel-pagination a.active {
   background: #4E443C;
   color: #fff;
   opacity: 1;
-  -webkit-box-shadow: 0 0 2px #F0EFE7;
-  -moz-box-shadow: 0 0 2px #F0EFE7;
-  box-shadow: 0 0 2px #F0EFE7;
+  -webkit-box-shadow: 0 0 .25em #F0EFE7;
+  -moz-box-shadow: 0 0 .25em #F0EFE7;
+  box-shadow: 0 0 .25em #F0EFE7;
 }
 #contactSection {
   background: green;
   height: 100%;
   min-height: 45.3125em;
   overflow-y: hidden;
+}
+#contact-items {
+  width: 40%;
+  float: left;
+  text-align: center;
+  margin-top: 10em;
+}
+#contact-items ul {
+  list-style: none;
+}
+#map-container {
+  width: 50%;
+  float: right;
+}
+#map-display {
+  overflow: hidden;
+  height: 21.25em;
+  width: 31.25em;
+  margin-top: 10em;
+}
+#gmap_canvas img {
+  max-width: none!important;
+  background: none!important;
 }

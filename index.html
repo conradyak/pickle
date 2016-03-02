@@ -13,13 +13,23 @@
         <h1>A.B. Ehret's Pickles</h1>
       </div>
       <div class="menu">
-        <h3 id="lp-h3">Menu</h3>
+        <h3 id="lp-h3">
+          <a href="#">Menu</a>
+        </h3>
         <nav>
           <ul class="menunav">
-            <li id="storyLi">Our Story</li>
-            <li id="pantryLi">Pantry</li>
-            <li id="galleryLi">Gallery</li>
-            <li id="contactLi">Contact</li>
+            <li id="storyLi">
+              <a href="#">Our Story</a>
+            </li>
+            <li id="pantryLi">
+              <a href="#">Pantry</a>
+            </li>
+            <li id="galleryLi">
+              <a href="#">Gallery</a>
+            </li>
+            <li id="contactLi">
+              <a href="#">Contact</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -130,8 +140,8 @@
         </div>
         <div id="map-container">
           <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
-          <div style='overflow:hidden;height:340px;width:500px;'>
-            <div id='gmap_canvas' style='height:340px;width:500px;'></div>
+          <div id="map-display">
+            <div id='gmap_canvas' style='height:21.25em;width:31.25em;'></div>
             <div>
               <small>
                 <a href="http://embedgooglemaps.com">
@@ -144,33 +154,7 @@
                 <a href="http://freedirectorysubmissionsites.com/">free web directories</a>
               </small>
             </div>
-            <style>
-              #gmap_canvas img {
-                max-width: none!important;
-                background: none!important;
-              }
-            </style>
           </div>
-          <script type='text/javascript'>
-            function init_map() {
-              var myOptions = {
-                zoom: 13,
-                center: new google.maps.LatLng(37.07058, -93.801714),
-                mapTypeId: google.maps.MapTypeId.HYBRID
-              };
-              map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
-              marker = new google.maps.Marker({
-                map: map,
-                position: new google.maps.LatLng(37.07058, -93.801714)
-              });
-              infowindow = new google.maps.InfoWindow({content: '<strong>Title</strong><br>14231 Lawrence 2140 Mount Vernon, MO 65712<br>'});
-              google.maps.event.addListener(marker, 'click', function () {
-                infowindow.open(map, marker);
-              });
-              infowindow.open(map, marker);
-            }
-            google.maps.event.addDomListener(window, 'load', init_map);
-          </script>
         </div>
       </div>
     </div>
