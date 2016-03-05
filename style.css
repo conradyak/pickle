@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background: black;
+  font-family: 'Old Standard TT', serif;
 }
 header {
   width: 20em;
@@ -11,7 +12,6 @@ header {
   top: 0;
   left: 0;
   background: #fff;
-  opacity: 0.9;
 }
 div.logo {
   width: 20em;
@@ -21,17 +21,22 @@ div.logo {
 div.logo h1 {
   min-width: 16.2rem;
   text-align: center;
-  margin: 0 auto;
+  font-size: 3em;
+  font-weight: bolder;
 }
 div.menu {
   width: 20em;
 }
 div.menu h3 {
   text-align: center;
+  font-size: 2em;
+  font-style: italic;
+  font-weight: 400;
 }
 div.menu ul {
   padding: 2rem 0;
   text-align: center;
+  font-size: 1.25em;
 }
 div.menu ul li {
   display: list-item;
@@ -40,7 +45,7 @@ div.menu ul li {
 .menu ul li a {}
 div.social {}
 div.social ul {
-  padding-top: 8em;
+  padding-top: 4em;
   text-align: center;
 }
 div.social ul li {
@@ -55,11 +60,8 @@ div.container {
 #landing-container {
   position: relative;
   overflow: hidden;
-  background-image: linear-gradient(
-    rgba(0,0,0,.8),
-    rgba(0,0,0,.8)),
-    url(image/cucumberHD.jpg);
-  min-height: 45.3125em;
+  background-image: linear-gradient( rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(image/cucumberHD.jpg);
+  min-height: 46em;
   overflow-y: hidden;
   background-repeat: no-repeat;
   background-position: 50% 0;
@@ -75,28 +77,25 @@ div.container {
   margin-left: 5em;
 }
 #storySection {
-  background: #f7f7f7;
+  background: #fff;
   height: 100%;
-  min-height: 45.3125em;
+  min-height: 46.5em;
   overflow-y: hidden;
 }
 #storyContainer {
   text-align: center;
-  width: 50%;
-  margin-left: 25%;
-  margin-top: 15%;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 7.5%;
   font-size: larger;
 }
-#story-logo {
-  width: 2em;
-  height: 2em;
-  background: green;
-  margin-left: 50%;
+#story-logo {}
+#story-logo img {
+  width: 5em;
 }
 #pantrySection {
-  background: blue;
   height: 100%;
-  min-height: 45.3125em;
+  min-height: 46.5em;
   overflow-y: hidden;
   background-image: url(image/pantry-background.jpg);
 }
@@ -108,15 +107,16 @@ div.container {
   width: 33.33%;
 }
 #pantryCard {
-  background-color: white;
+  background-color: #fff;
   width: 90%;
   height: 20em;
   margin-left: 5%;
   position: relative;
 }
+#pantryCard h3 {}
 #gallerySection {
   height: 100%;
-  min-height: 45.3125em;
+  min-height: 46.5em;
   overflow-y: hidden;
   background: #fff;
 }
@@ -216,24 +216,27 @@ div.container {
   box-shadow: 0 0 .25em #F0EFE7;
 }
 #contactSection {
-  background: green;
   height: 100%;
-  min-height: 45.3125em;
+  min-height: 46.5em;
   overflow-y: hidden;
   background-image: url(image/contract-background.png);
 }
 #contact-items {
   width: 40%;
+  height: 38em;
   float: left;
   text-align: center;
-  margin-top: 10em;
+  margin-top: 5em;
+  margin-left: 5em;
+  background: #fff;
 }
 #contact-items ul {
   list-style: none;
 }
 #map-container {
-  width: 50%;
   float: right;
+  margin-right: 2em;
+  width: 45%;
 }
 #map-display {
   overflow: hidden;
