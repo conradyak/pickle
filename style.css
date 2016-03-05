@@ -1,15 +1,17 @@
 body {
   margin: 0;
+  background: black;
 }
 header {
   width: 20em;
   height: 100%;
   float: left;
   position: fixed;
-  z-index: 1000;
   flex-direction: column;
   top: 0;
   left: 0;
+  background: #fff;
+  opacity: 0.9;
 }
 div.logo {
   width: 20em;
@@ -50,21 +52,35 @@ div.social ul li a {
 div.container {
   padding-left: 20rem;
 }
-#landingSection {
-  background: gray;
-  height: 100%;
+#landing-container {
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(
+    rgba(0,0,0,.8),
+    rgba(0,0,0,.8)),
+    url(image/cucumberHD.jpg);
   min-height: 45.3125em;
   overflow-y: hidden;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  z-index: -1;
+}
+#landingLogo {
+  opacity: 0.9;
+  margin-left: 5em;
 }
 #storySection {
   background: #f7f7f7;
   height: 100%;
   min-height: 45.3125em;
   overflow-y: hidden;
-  z-index: 1;
 }
 #storyContainer {
-  z-index: 2;
   text-align: center;
   width: 50%;
   margin-left: 25%;
@@ -82,6 +98,7 @@ div.container {
   height: 100%;
   min-height: 45.3125em;
   overflow-y: hidden;
+  background-image: url(image/pantry-background.jpg);
 }
 #pantryContainer {
   max-width: 100%;
@@ -101,6 +118,7 @@ div.container {
   height: 100%;
   min-height: 45.3125em;
   overflow-y: hidden;
+  background: #fff;
 }
 .jcarousel-wrapper {
   margin: 2em auto;
@@ -202,6 +220,7 @@ div.container {
   height: 100%;
   min-height: 45.3125em;
   overflow-y: hidden;
+  background-image: url(image/contract-background.png);
 }
 #contact-items {
   width: 40%;
