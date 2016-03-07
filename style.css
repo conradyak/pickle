@@ -3,6 +3,12 @@ body {
   background: black;
   font-family: 'Old Standard TT', serif;
 }
+body a:link {
+  color: black;
+}
+body a:visited {
+  color: black;
+}
 header {
   width: 20em;
   height: 100%;
@@ -33,6 +39,13 @@ div.menu h3 {
   font-style: italic;
   font-weight: 400;
 }
+div.menu h3 a {
+  text-decoration: none;
+}
+div.menu h3 a:hover {
+  text-decoration: underline;
+  color: green;
+}
 div.menu ul {
   padding: 2rem 0;
   text-align: center;
@@ -42,17 +55,27 @@ div.menu ul li {
   display: list-item;
   padding-bottom: 1em;
 }
-.menu ul li a {}
+.menu ul li a {
+  text-decoration: none;
+}
+.menu ul li a:hover {
+  text-decoration: underline;
+  color: green;
+}
 div.social {}
 div.social ul {
-  padding-top: 4em;
-  text-align: center;
+  padding-top: 3em;
+  padding-left: 4.9em;
 }
 div.social ul li {
   display: inline-block;
 }
 div.social ul li a {
   padding-right: 1em;
+  text-decoration: none;
+}
+div.social ul li a:hover {
+  color: green;
 }
 div.container {
   padding-left: 20rem;
@@ -230,8 +253,36 @@ div.container {
   margin-left: 5em;
   background: #fff;
 }
+#contact-items h2 {
+  font-size: xx-large;
+}
 #contact-items ul {
   list-style: none;
+  font-size: x-large;
+}
+#contact-items ul li {
+  margin-top: 2em;
+}
+#contact-items form {
+  margin-top: 2em;
+  margin-left: 2em;
+}
+#input-box {
+  width: 12.5em;
+  font-size: medium;
+  font-family: 'Old Standard TT', serif;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-top: 2em;
+}
+#input-button {
+  font-family: 'Old Standard TT', serif;
+  background: black;
+  color: white;
+  border: none;
+  width: 8em;
+  font-size: inherit;
 }
 #map-container {
   float: right;
