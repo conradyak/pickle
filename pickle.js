@@ -72,24 +72,4 @@ $(document).ready(function() {
       });
   });
 
-  function init_map() {
-    var myOptions = {
-      zoom: 13,
-      center: new google.maps.LatLng(37.07058, -93.801714),
-      mapTypeId: google.maps.MapTypeId.HYBRID
-    };
-    map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
-    marker = new google.maps.Marker({
-      map: map,
-      position: new google.maps.LatLng(37.07058, -93.801714)
-    });
-    infowindow = new google.maps.InfoWindow({
-      content: '<strong>Title</strong><br>14231 Lawrence 2140 Mount Vernon, MO 65712<br>'
-    });
-    google.maps.event.addListener(marker, 'click', function() {
-      infowindow.open(map, marker);
-    });
-    infowindow.open(map, marker);
-  }
-  google.maps.event.addDomListener(window, 'load', init_map);
 });

@@ -44,7 +44,7 @@ div.menu h3 a {
 }
 div.menu h3 a:hover {
   text-decoration: underline;
-  color: green;
+  color: #147B14;
 }
 div.menu ul {
   padding: 2rem 0;
@@ -60,7 +60,7 @@ div.menu ul li {
 }
 .menu ul li a:hover {
   text-decoration: underline;
-  color: green;
+  color: #147B14;
 }
 div.social {}
 div.social ul {
@@ -75,7 +75,7 @@ div.social ul li a {
   text-decoration: none;
 }
 div.social ul li a:hover {
-  color: green;
+  color: #147B14;
 }
 div.container {
   padding-left: 20rem;
@@ -135,8 +135,9 @@ div.container {
   height: 20em;
   margin-left: 5%;
   position: relative;
+  border-radius: 1%;
+  text-align: center;
 }
-#pantryCard h3 {}
 #gallerySection {
   height: 100%;
   min-height: 46.5em;
@@ -165,10 +166,10 @@ div.container {
   position: relative;
   list-style: none;
   margin: 0;
+  margin-top: 5.5em;
   padding: 0;
 }
 .jcarousel li {
-  width: 12.5em;
   float: left;
   border: 0.00625em solid #fff;
   -moz-box-sizing: border-box;
@@ -245,12 +246,11 @@ div.container {
   background-image: url(image/contract-background.png);
 }
 #contact-items {
-  width: 40%;
+  width: 80%;
   height: 38em;
-  float: left;
   text-align: center;
   margin-top: 5em;
-  margin-left: 5em;
+  margin-left: 10%;
   background: #fff;
 }
 #contact-items h2 {
@@ -283,19 +283,4 @@ div.container {
   border: none;
   width: 8em;
   font-size: inherit;
-}
-#map-container {
-  float: right;
-  margin-right: 2em;
-  width: 45%;
-}
-#map-display {
-  overflow: hidden;
-  height: 21.25em;
-  width: 31.25em;
-  margin-top: 10em;
-}
-#gmap_canvas img {
-  max-width: none!important;
-  background: none!important;
 }
